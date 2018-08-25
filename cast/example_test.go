@@ -42,5 +42,5 @@ func ExampleSwapper() {
 		return b, a
 	}
 
-	fmt.Println(cast.Swap(swap), 0, 1)
+	cast.Print(cast.Swap(swap), 0, 1)
 }
