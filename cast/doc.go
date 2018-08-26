@@ -5,41 +5,22 @@
 //
 // 1. primitive type
 //
-// 2. struct type
-//
-// 3. signature type
+// 2. custom type
 //
 //
 // Primitive Type
 //
-// primitie type
+// primitive type
 //	[]byte <-> string
 //	string <-> []rune
 //	string <-> int
 //	int <-> float64
 //
-// Struct Type
+// Custom Type
 //
-// มีเงื่อนไขดังนี้
-//	1. มีจำนวน fields เท่ากัน
-//	2. ทุก fields มีชื่อตรงกัน
-//	3. ทุก fields มี type ตรงกัน
-//
-// Signature Type
-//
-// ยกตัวอย่างเช่น
-//	type Stringer interface {
-//		String() string
-//	}
-//
-// โดยปกติถ้าจะ implement ก็มักจะสร้าง struct เช่น
-//	type something struct {
-//		asset string
-//	}
-//
-//	func (s something) String() string {
-//		return s.asset
-//	}
-//
+// แยกเป็น
+//	1. simple type
+//	2. struct type
+//	3. func type
 //
 package cast

@@ -2,12 +2,15 @@ package cast_test
 
 import (
 	"fmt"
-
-	"github.com/pallat/meetup/cast"
 )
 
-func ExampleInt() {
-	var n cast.Int = 24
+type (
+	Int    int
+	String string
+)
+
+func ExampleSimple() {
+	var n Int = 24
 
 	var i int = int(n)
 	fmt.Printf("%T %v", n, n)

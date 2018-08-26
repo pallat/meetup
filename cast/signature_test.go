@@ -16,7 +16,7 @@ func Print(s Swapper, a, b int) {
 	fmt.Println(s.Do(a, b))
 }
 
-func ExampleSwapper() {
+func ExampleFunc() {
 	var swap = func(a, b int) (int, int) {
 		return b, a
 	}
