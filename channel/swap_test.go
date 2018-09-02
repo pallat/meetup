@@ -2,9 +2,10 @@ package channel_test
 
 import (
 	"fmt"
+	"testing"
 )
 
-const max = 3
+// const max = 3
 
 func SwapFunc() func() int {
 	ch := make(chan int, max)
@@ -33,5 +34,13 @@ func ExampleSwapFunc_chan() {
 
 	for i := 0; i < 10; i++ {
 		fmt.Println(fn())
+	}
+}
+
+func BenchmarkSwap(b *testing.B) {
+	fn := SwapFunc()
+
+	for i := 0; i < b.N; i++ {
+		fn()
 	}
 }
