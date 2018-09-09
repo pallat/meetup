@@ -12,6 +12,28 @@ https://github.com/pallat
 * 
 .image Go-Logo_Blue.png _ 300
 
+
+* Channel
+.image gopher_chat.png _ 300
+จินตนาการถึงท่อน้ำ
+.image pipe.png
+
+
+* State nil is blocked
+.play state_nil.go /^func main/,/^}/
+
+* State nil can not receive
+.play state_send2nil.go
+
+* State closed is can receive
+.play -edit state_closed.go
+
+* To send Data
+
+* Buffered vs Unbuffered
+.link https://www.ardanlabs.com/blog/2017/10/the-behavior-of-channels.html [Ardan labs]
+
+
 * Pool Function
 .play pool.go /^func main/,/^}/
 .code pool.go /^func PoolFunc/,/^}/
@@ -30,9 +52,10 @@ https://github.com/pallat
 .code delayed.go /^func sender/,/^}/
 .code delayed.go /^func receiver/,/^}/
 
+* No Guarantee
+.play noguarantee.go /^func main/,/^}/
+.code noguarantee.go /^func sender/,/^}/
+.code noguarantee.go /^func receiver/,/^}/
 
-* Buffered vs Unbuffered
-.link https://www.ardanlabs.com/blog/2017/10/the-behavior-of-channels.html [Ardan labs]
-
-** Guarantee vs No Guarantee vs Delayed Guarantee
-
+* To be signal
+chan struct{} is the zero-space
