@@ -9,17 +9,9 @@ func SwapFunc() func() int {
 		ch <- i
 	}
 
-	turn := make(chan int)
-
-	go func() {
-		for c := range turn {
-			ch <- c
-		}
-	}()
-
 	return func() int {
 		i := <-ch
-		turn <- i
+		ch <- i
 		return i
 	}
 }

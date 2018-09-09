@@ -3,6 +3,7 @@ package channel_test
 import (
 	"fmt"
 	"testing"
+	"time"
 )
 
 // const max = 3
@@ -14,17 +15,9 @@ func SwapFunc() func() int {
 		ch <- i
 	}
 
-	turn := make(chan int)
-
-	go func() {
-		for c := range turn {
-			ch <- c
-		}
-	}()
-
 	return func() int {
 		i := <-ch
-		turn <- i
+		ch <- i
 		return i
 	}
 }
@@ -43,4 +36,13 @@ func BenchmarkSwap(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		fn()
 	}
+}
+
+func TestSwapFunc_chan(t *testing.T) {
+	fn := SwapFunc()
+
+	for i := 0; i < 100; i++ {
+		go fmt.Println(fn())
+	}
+	time.Sleep(time.Second)
 }
