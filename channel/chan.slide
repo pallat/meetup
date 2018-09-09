@@ -1,0 +1,38 @@
+
+Working with channels
+go get th #2
+18:04 19 Sep 2018
+Tags: channel, chan, golang
+
+Pallat Anchaleechamaikorn
+Software Engineer, KBTG
+yod.pallat@gmail.com
+https://github.com/pallat
+
+* 
+.image Go-Logo_Blue.png _ 300
+
+* Pool Function
+.play pool.go /^func main/,/^}/
+.code pool.go /^func PoolFunc/,/^}/
+
+* Pool Function(2)
+.play pool2.go /^func main/,/^}/
+.code pool2.go /^func PoolFunc/,/^}/
+
+* Unbuffered Channel
+.play guarantee.go /^func main/,/^}/
+.code guarantee.go /^func sender/,/^}/
+.code guarantee.go /^func receiver/,/^}/
+
+* Delayed Guarantee
+.play delayed.go /^func main/,/^}/
+.code delayed.go /^func sender/,/^}/
+.code delayed.go /^func receiver/,/^}/
+
+
+* Buffered vs Unbuffered
+.link https://www.ardanlabs.com/blog/2017/10/the-behavior-of-channels.html [Ardan labs]
+
+** Guarantee vs No Guarantee vs Delayed Guarantee
+
