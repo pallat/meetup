@@ -11,6 +11,7 @@ https://github.com/pallat
 
 * 
 .image Go-Logo_Blue.png _ 300
+.image github.com.pallat.meetup.channel.png
 
 
 * Channel
@@ -19,28 +20,22 @@ https://github.com/pallat
 .image pipe.png
 
 
-* State nil is blocked
-.play state_nil.go /^func main/,/^}/
-
-* State nil can not receive
-.play state_send2nil.go
-
-* State closed is can receive
-.play -edit state_closed.go
-
-* To send Data
-
-* Buffered vs Unbuffered
-.link https://www.ardanlabs.com/blog/2017/10/the-behavior-of-channels.html [Ardan labs]
-
-
-* Pool Function
+* example (Buffered)
 .play pool.go /^func main/,/^}/
 .code pool.go /^func PoolFunc/,/^}/
 
-* Pool Function(2)
-.play pool2.go /^func main/,/^}/
-.code pool2.go /^func PoolFunc/,/^}/
+* example (Unbuffered)
+.play example_usage.go
+
+
+* Unbuffered Channel (nil)
+- nil is blocked
+.play example_unbuffered_nil.go
+
+
+* Unbuffered Channel Guarantee
+.play example_unbuffered_send.go
+
 
 * Unbuffered Channel
 .play guarantee.go /^func main/,/^}/
@@ -59,3 +54,5 @@ https://github.com/pallat
 
 * To be signal
 chan struct{} is the zero-space
+.play signal.go /^func main/,/^}/
+.code signal.go /^func busy/,/^}/

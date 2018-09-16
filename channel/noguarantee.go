@@ -10,7 +10,7 @@ func main() {
 	go sender(ch)
 	go sender(ch)
 	receiver(ch)
-	fmt.Println("I'm going to throw away the least")
+	fmt.Println("I'm going to throw away the lest")
 }
 
 func sender(ch chan<- time.Time) {
