@@ -10,6 +10,9 @@ yod.pallat@gmail.com
 https://github.com/pallat
 
 * 
+.background goGetTh2.001.png 600 _
+
+* 
 .image Go-Logo_Blue.png _ 300
 .image github.com.pallat.meetup.channel.png
 
@@ -56,3 +59,6 @@ https://github.com/pallat
 chan struct{} is the zero-space
 .play signal.go /^func main/,/^}/
 .code signal.go /^func busy/,/^}/
+
+* 
+.background goGetTh2.001.png 600 _
