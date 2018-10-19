@@ -1,0 +1,259 @@
+
+Let's Golang
+
+14:04 19 Oct 2018
+Tags: golang
+
+Pallat Anchaleechamaikorn
+Software Engineer, KBTG
+pallat.a@kbtg.tech
+https://github.com/pallat
+
+* Muscot
+.image gopher3.png
+.image 58e62d9208a2a4082b89aee437b1ecf1efa35308.png 300 _
+
+* Golang
+Go (or GOLANG) is created by Google and it’s gaining popularity which will only grow in 2018. It compiles fast and it has an excellent standard library that is also great with concurrent programs as well.
+Sites that use GO are: Netflix, YouTube and Adobe.
+
+* Go users
+.link https://github.com/golang/go/wiki/GoUsers
+
+* When I started using Golang
+@Dtac 
+commit c2e131962f5eab63d54f40317440e462ddd7593b
+Author: Prasongsuk Anuwong <joe@odd-e.co.th>
+Date:   Mon May 26 16:13:42 2014 +0700
+
+
+* Who Picked Golang
+.image 44381671_10155518915287047_8852157158763003904_o.jpg _ 800
+
+* Github reports
+.image github_grwth.png _ 1000
+
+* PYPL PopularitY of Programming Language index
+.image PYPLindex.jpg 600 _
+
+* Most Loved
+[[https://insights.stackoverflow.com/survey/2017#most-loved-dreaded-and-wanted]]
+.image MostLoved.png 550 _
+
+* Most Wanted
+https://insights.stackoverflow.com/survey/2017#most-loved-dreaded-and-wanted
+.image MostWanted.png 600 _
+
+* Most Dreaded
+https://insights.stackoverflow.com/survey/2017#most-loved-dreaded-and-wanted
+.image MostDreaded.png 600 _
+
+- *JavaScript*
+- *Java*
+- *Python*
+- *TypeScript*
+- *PHP*
+- Ruby on Rails
+- Elixir
+- Rust
+- *Go*
+- *C#*
+- *Swift*
+
+* 15 Highest Paying Programming Languages in 2017
+
+- Go
+- Scala
+- Objective-C
+- CoffeScript
+- R
+- TypeScript
+- SQL
+- JAVA
+- Python
+- JavaScript
+
+* 15 Highest Paying Programming Languages in 2017
+
+- C++
+- C#
+- Perl
+- PHP
+- IOS/Swift
+
+
+* What are the most popular programming languages for 2018?
+[[https://usersnap.com/blog/programming-languages-2018/]]
+
+
+
+* April 2018 Hacker News Hiring Trends
+.image HNranking.jpg _ 1000
+https://www.hntrends.com/2018/apr-golang-jumps-into-top-10.html?compare1=Java&compare2=Kotlin&compare3=Python&compare4=golang
+
+
+* จุดเด่นของภาษาโก
+- performance (เร็ว, ใช้ทรัพยากรน้อย)
+
+* OMR
+.image omrperf.png
+
+
+* จุดเด่นของภาษาโก
+.caption modern language
+
+- closure function
+
+* Closure function
+.play closure.go
+
+* จุดเด่นของภาษาโก
+.caption modern language
+
+- higher order function
+
+* higher order function
+.play higherorder.go
+
+* จุดเด่นของภาษาโก
+- testing support
+- garbage collection
+- easier concurrency model
+
+
+* Java Thread
+.code MyThread.java
+
+* Java Thread (main)
+.code ThreadRunExample.java
+
+* Python Thread
+.code pyThread.py
+
+* go routine
+.play goroutine.go
+
+* Fibonacci
+.play fibonacci.go /^func main/,/^}/
+.code fibonacci.go /^func fibonacci/,/^}/
+
+
+* จุดเด่นของภาษาโก
+- สนุก
+
+* Fibonacci Closure style
+.play fibonacci_closure.go
+
+* Fibonacci again
+.play fibonacci_prime.go /^type fibonacci/,/^// END/
+
+
+* จุดเด่นของภาษาโก
+- เรียนรู้ง่าย(ไหมนะ)
+
+* Tour
+.link https://tour.golang.org
+.iframe https://tour.golang.org 500 1000
+
+
+* จุดเด่นของภาษาโก
+- documents
+
+* Documents
+.link https://golang.org/pkg/
+.iframe https://golang.org/pkg/ 500 1000
+
+
+* จุดเด่นของภาษาโก
+- compile ไปรันที่ไหนก็ได้
+
+* GOOS
+
+- android
+- darwin
+- dragonfly
+- freebsd
+- linux
+- nacl
+- netbsd
+- openbsd
+- plan9
+- solaris
+- windows
+- zos
+
+* 32-bit GOARCH
+
+- 386
+- amd64p32
+- arm
+- armbe
+- mips
+- mipsle
+- mips64p32
+- mips64p32le
+- ppc
+- s390
+- sparc
+
+* 64-bit GOARCH
+
+- amd64
+- arm64
+- arm64be
+- ppc64
+- ppc64le
+- mips64
+- mips64le
+- s390x
+- sparc64
+
+* จุดเด่นของภาษาโก
+- keywords เหมือนเดิม
+- strong type
+
+* Grab
+.image grab2018.png _ 1000
+
+
+* จุดเด่นของภาษาโก
+
+- ไม่รู้จัก jvm (just kidding)
+
+* ข้อกังวล
+
+* หาโปรแกรมเมอร์ยาก
+
+.image IMG_20180919_183424.jpg 600 _
+
+* lib น้อย เมื่อเทียบกับภาษาอื่น
+* สิ่งอำนวยความสะดวกน้อย(มาก)
+* ไม่มี layout แนะนำ
+
+.link https://github.com/golang-standards/project-layout
+
+
+
+* สายย่อ
+* pointer (*,&)
+
+.iframe https://golang.org/src/time/sleep.go?s=4775:4809#L142 500 1000
+
+* if err != nil
+
+.link https://golang.org/src/net/http/transport.go?#L1570 net/http
+.iframe https://golang.org/src/net/http/transport.go?#L1570 500 1000
+
+
+* ไหนว่าเรียนรู้ง่ายไง
+* เขียนให้พังง่ายมาก
+
+* เริ่มยังไง
+.link https://tour.golang.org
+- ศึกษาจาก open source
+.link https://www.facebook.com/groups/584867114995854/ Facebook Group Golang Thailand
+.link https://www.facebook.com/golangthailand/ Page Golang Thailand
+.link https://www.facebook.com/gogetth/ Page GO GET TH
+
+* Feedback
+.image image002.png 
